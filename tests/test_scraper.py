@@ -90,6 +90,11 @@ SAMPLE_PEERS_HTML = """
   <td><a href="/company/WIPRO/consolidated/">Wipro</a></td>
   <td>420</td><td>22.1</td><td>2,20,000</td><td>90,000</td><td>18.5</td>
 </tr>
+<tr>
+  <td></td>
+  <td>Median: 73 Co.</td>
+  <td>218.65</td><td>19.12</td><td>891.56</td><td>85.66</td><td>22.12</td>
+</tr>
 </tbody>
 </table>
 """

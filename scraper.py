@@ -133,7 +133,8 @@ def fetch_peers(warehouse_id: str, consolidated: bool = True) -> List[Dict]:
     peers: List[Dict] = []
     for _, r in df.iterrows():
         name = str(r[name_col]).strip()
-        if name.upper() in SUMMARY_ROWS:
+        # Summary rows can carry a suffix, e.g. "Median: 73 Co."
+        if name.split(":")[0].strip().upper() in SUMMARY_ROWS:
             continue
         row = {"Name": name, "Ticker": ticker_by_name.get(name, name)}
         for col in df.columns:
